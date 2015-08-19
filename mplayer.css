@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.mplayer{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+.mplayer{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.player{
+	background: #0BA0A7;.
+	background: -moz-radial-gradient(center, ellipse cover, #0BA0A7 0%, #287C7F 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0BA0A7), color-stop(100%, #287C7F));
+	background: -webkit-radial-gradient(center, ellipse cover, #0BA0A7 0%, #287C7F 100%);
+	background: -o-radial-gradient(center, ellipse cover, #0BA0A7 0%, #287C7F 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #0BA0A7 0%, #287C7F 100%);
+	background: radial-gradient(ellipse at center, #0BA0A7 0%, #287C7F 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0BA0A7', endColorstr='#287C7F', GradientType=1);
+}
+.mplayer-audio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	display: none;
+}
+button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	color: rgba(255, 255, 255, 0.6);
+	padding: 0;
+	outline: none;
+	width: 40px;
+	height: 40px;
+	font-size: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 70px;
+	margin-right: 10px;
+	transition: all .2s ease-in-out;
+}
+.meta{
+	padding: 35px;
+	text-align: center;
+}
+.meta > *{
+	vertical-align: middle;
+}
+.thumb, .info{
+	display: inline-block;
+}
+.thumb img {
+	width: 125px;
+	height: 125px;
+	border-radius: 200px;
+	border: 10px solid rgba(255, 255, 255, 0.4);
+}
+.info{
+	margin-left: 16px;
+}
+p.song {
+	font-size: 32px;
+	line-height: 42px;
+	color: rgba(255, 255, 255, 0.77);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+p.artist{
+	text-align: left;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.50);
+}
+.volume{
+	margin-top: 15px;
+}
+.volume-gutter{
+	background: rgba(255, 255, 255, 0.65);
+	height: 5px;
+	max-width: 150px;
+	cursor: pointer;
+}
+.volume-slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{
+	background: rgba(61, 65, 91, 0.10);
+	height: 5px;
+	cursor: pointer;
+}
+.volume-slider .ui-slider-range.ui-widget-header.ui-corner-all.ui-slider-range-min{
+	background: #1A494B;
+}
+.progress-gutter{
+	width: 100%;
+	background: rgba(61, 65, 91, 0.20);
+	margin: 0 auto;
+	cursor: pointer;
+}
+.progress-slider .ui-slider-range.ui-widget-header.ui-corner-all.ui-slider-range-min{
+	background: rgba(61, 65, 91, 0.25);
+	height: 50px;
+}
+.progress-slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{
+	background: rgba(61, 65, 91, 0.20);
+	height: 50px;
+}
+.progress-slider span.ui-slider-handle.ui-state-default.ui-corner-all {
+	background: #eee;
+	height: 100%;
+	top: 0;
+	opacity: 0;
+}
+.controls {
+	text-align: left;
+	margin-top: 15px;
+}
+button:hover{
+	color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	transition: all .2s ease-in-out;
+
+}
+button.hide{
+	display: none;
+}
+@media only screen and (max-width: 768px) {	
+	.meta {
+	    padding: 15px;
+	    text-align: center;
+	}
+	.thumb, .info {
+	    display: block;
+	}
+	p.song, p.artist,.controls {
+		text-align: center;
+	}
+	p.song{
+		font-size: 24px;
+	}
+	.thumb img {
+		border: none;
+	    height: 75px;
+	    width: 75px;
+	    transition: all .2s ease-in-out;
+	}
+	.volumegutter{
+		margin: 0 auto;
+	}
+	.progressgutter, .progressbar{
+		height: 25px;
+		transition: all .2s ease-in-out;
+	}
+}
+.volumeslider {
+	background: rgba(0, 0, 0, 0);
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	opacity: 0.8;
+	right: -5px;
+	top: -2.5px;
+}
+.progressslider {
+	background: rgba(0, 0, 0, 0);
+	position: absolute;
+	width: 15px;
+	height: 100%;
+	opacity: 0.8;
+	right: -5px;
+	top: 0;
+}
+
+span.ui-slider-handle.ui-state-default.ui-corner-all.ui-state-hover, span.ui-slider-handle.ui-state-default.ui-corner-all.ui-state-focus{
+	outline: none;
+}

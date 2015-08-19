@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mPlayer HTML5 Responsive Music Player</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="mplayer.css"/>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="mplayer">
+			<div class="player-wrap">
+				<div class="player">
+					<div class="meta">
+						<div class="thumb">
+							<img src="lana.png">
+						</div>
+						<div class="info">
+							<p class="song">Summertime Sadness</p>
+							<p class="artist">Lana Del Rey</p>
+							<div class="controls">
+								<button class="prev"><i class="fa fa-fast-backward"></i></button>
+								<button class="play"><i class="fa fa-play"></i></button>
+								<button class="pause hide"><i class="fa fa-pause"></i></button>
+								<button class="next"><i class="fa fa-fast-forward"></i></button>
+							</div>
+							<div class="volume">
+								<div class="volume-gutter">
+									<div class="volume-slider"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-gutter">
+							<div class="progress-slider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<audio id="mplayeraudio" preload="auto" controls="controls" class="mplayer-audio">
+	<source src="audio/summertime.mp3">
+</audio>
+<span id="amount"></span>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="mplayer.js"></script>
+</body>
+</html>
